@@ -12,5 +12,5 @@ Contains the source code.
 2. execute in shell
 ``` shell
 dotnet DotNetCoreHelloFromAppSettings.dll
-```
+``` 
 
