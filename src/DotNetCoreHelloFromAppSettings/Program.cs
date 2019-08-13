@@ -10,7 +10,10 @@ namespace DotNetCoreHelloFromAppSettings
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                  .AddEnvironmentVariables()
+                  .AddCommandLine(args);
+
 
             var configuration = builder.Build();
 
